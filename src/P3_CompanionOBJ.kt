@@ -25,7 +25,7 @@ class ClassComp {
 
     //클래스내 static클래스 companion을 정의하고 static 멤버로 할당받아 static으로 공유(싱글톤)
     //ClassComp로 여러 인스턴스가 접근할 경우, static으로 할당된 동일 companion 인스턴스를 접근하는것
-    //static이 아니지만 companion이 static이므로 멤버 변수 함수도 공유되는 거임
+    //static이 아니지만 companion이 static으로 할당되면서 인스턴스가 되면서 내부 변수 함수도 공유
     //자바에서 static과 동일한 사용은 같음
     companion object {
         var n1 = "n1" //static companion의 변수
